@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import TodoForm from './TodoForm';
 import { RiCloseCircleLine } from 'react-icons/ri';
 import { TiEdit } from 'react-icons/ti';
+import { RiCheckDoubleFill } from 'react-icons/ri';
 
 const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
   const [edit, setEdit] = useState({
@@ -36,6 +37,11 @@ const Todo = ({ todos, completeTodo, removeTodo, updateTodo }) => {
         />
         <TiEdit
           onClick={() => setEdit({ id: todo.id, value: todo.text })}
+          className='edit-icon'
+        />
+
+        <RiCheckDoubleFill
+          onClick={() => completeTodo( todo.id )}
           className='edit-icon'
         />
       </div>
