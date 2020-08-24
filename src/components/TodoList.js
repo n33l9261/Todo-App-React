@@ -50,8 +50,8 @@ function TodoList() {
     <>
 
    
-      {/* <h1>TODO APP </h1> */}
-     <h1> <ReactRotatingText items={['TODO APP', '(ADD / DELETE / UPDATE)', 'Made By : Suvraneel Chatterjee']} /></h1>
+      
+     <h1 className="size"> <ReactRotatingText items={['TODO APP', '(ADD / DELETE / UPDATE)', 'Made By : Suvraneel Chatterjee']} /></h1>
       <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}

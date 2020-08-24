@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 520px;
+  width: 40%;
   max-height: 800px;
   background: #2f3031;
   text-align: center;
@@ -25,11 +25,33 @@ body {
   overflow: auto;
   /* overflow:scroll;overflow-x:hidden;overflow-y:scroll; */
 }
+.size{
+  font-size: 24px;
+}
+
+@media(max-width: 770px){
+  .todo-app {
+      width: 80%;
+      font-size: 15px;
+      /* padding-bottom: 20px; */
+      /* margin-top: 30px; */
+      margin: auto;
+      margin-top:45px;
+
+  }
+  .todo-button {
+    margin-top: 10px;
+  }
+  .size{
+    
+    font-size: 20px;
+  }
+}
 
 h1 {
   margin: 32px 0;
   color: #fff;
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 
 .complete {
